@@ -62,7 +62,7 @@ export default async function handler(req, res) {
       }
 
       await transporter.sendMail({
-        from: `"Jetronixs Careers" <${process.env.EMAIL_USER}>`,
+        from: `"Jetronixs Careers" <noreply@jetronixs.com>`,
         to: process.env.EMAIL_RECIPIENT,
         subject: `New Application – ${fields.jobTitle}`,
         html: `
